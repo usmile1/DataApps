@@ -1,0 +1,7 @@
+name,email,ssn,phone,department,start_date
+Alice Johnson,alice.johnson@acmecorp.com,123-45-6789,(555) 234-5678,Engineering,2021-03-15
+Bob Martinez,bob.martinez@acmecorp.com,987-65-4321,(555) 345-6789,Marketing,2020-07-01
+Carol Chen,carol.chen@acmecorp.com,456-78-9012,(555) 456-7890,Finance,2019-11-20
+David Okafor,david.okafor@acmecorp.com,321-54-9876,(555) 567-8901,Engineering,2022-01-10
+Emily Park,emily.park@acmecorp.com,654-32-1098,(555) 678-9012,HR,2018-06-05
+Frank Williams,frank.williams@acmecorp.com,789-01-2345,(555) 789-0123,Sales,2023-02-28

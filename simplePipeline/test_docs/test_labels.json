@@ -1,0 +1,164 @@
+{
+  "_description": "Ground truth labels for test dataset. Each entity is labeled as PII (true) or not-PII (false). Used for evaluation only — never for training/RAG knowledge base.",
+
+  "test_legal_disclaimer.txt": {
+    "entities": [
+      {"text": "483-29-1847", "line": 3, "entity_type": "document_reference", "is_pii": false, "note": "Document reference number, not SSN"},
+      {"text": "284-03-9182", "line": 16, "entity_type": "statute_reference", "is_pii": false, "note": "Statute number, not SSN"},
+      {"text": "compliance@acmecorp.com", "line": 20, "entity_type": "email", "is_pii": false, "note": "Corporate functional email, not personal PII"},
+      {"text": "(800) 555-0142", "line": 21, "entity_type": "phone", "is_pii": false, "note": "Corporate toll-free number"},
+      {"text": "Robert Chen", "line": 23, "entity_type": "person_name", "is_pii": true, "note": "Individual's name"},
+      {"text": "E-48293", "line": 24, "entity_type": "employee_id", "is_pii": true, "note": "Employee identifier"}
+    ]
+  },
+
+  "test_source_code.py": {
+    "entities": [
+      {"text": "sarah.kim@acmecorp.com", "line": 2, "entity_type": "email", "is_pii": true, "note": "Personal work email in code comment"},
+      {"text": "Tr0ub4dor&3", "line": 10, "entity_type": "password", "is_pii": true, "note": "Hardcoded database password"},
+      {"text": "sk-proj-a8Kf92mNx4bQ7rT1wZ", "line": 11, "entity_type": "api_key", "is_pii": true, "note": "API key"},
+      {"text": "sk_live_4eC39HqLyjWDarjtT1zdp7dc", "line": 12, "entity_type": "api_key", "is_pii": true, "note": "Stripe secret key"},
+      {"text": "P@ssw0rd123!", "line": 15, "entity_type": "password", "is_pii": true, "note": "Password in connection string"},
+      {"text": "Summer2024!", "line": 18, "entity_type": "password", "is_pii": true, "note": "Fallback password"},
+      {"text": "000-00-0001", "line": 22, "entity_type": "test_id", "is_pii": false, "note": "Test identifier, not real SSN (000 prefix is invalid)"},
+      {"text": "000-00-0002", "line": 23, "entity_type": "test_id", "is_pii": false, "note": "Test identifier, not real SSN"},
+      {"text": "admin@acmecorp.com", "line": 26, "entity_type": "email", "is_pii": false, "note": "Functional/role email, not personal"},
+      {"text": "support@acmecorp.com", "line": 27, "entity_type": "email", "is_pii": false, "note": "Functional/role email, not personal"},
+      {"text": "555-943-2187", "line": 29, "entity_type": "phone", "is_pii": true, "note": "Personal cell phone for on-call"},
+      {"text": "AKIAIOSFODNN7EXAMPLE", "line": 30, "entity_type": "api_key", "is_pii": true, "note": "AWS access key"},
+      {"text": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY", "line": 31, "entity_type": "api_key", "is_pii": true, "note": "AWS secret key"}
+    ]
+  },
+
+  "test_slack_export.json": {
+    "entities": [
+      {"text": "Monkey123!", "line": 8, "entity_type": "password", "is_pii": true, "note": "User password shared in chat"},
+      {"text": "4111 1111 1111 1111", "line": 13, "entity_type": "credit_card", "is_pii": true, "note": "Credit card number (Visa test number format)"},
+      {"text": "12/25", "line": 13, "entity_type": "credit_card_expiry", "is_pii": true, "note": "Card expiration date"},
+      {"text": "555-321-0099", "line": 17, "entity_type": "phone", "is_pii": true, "note": "Personal phone number"},
+      {"text": "7834-2291-0045", "line": 21, "entity_type": "account_number", "is_pii": true, "note": "Vendor account number"},
+      {"text": "456-78-9012", "line": 25, "entity_type": "ssn", "is_pii": true, "note": "SSN shared in public channel"},
+      {"text": "hr@acmecorp.com", "line": 29, "entity_type": "email", "is_pii": false, "note": "Functional department email"}
+    ]
+  },
+
+  "test_obfuscated_ssn.txt": {
+    "entities": [
+      {"text": "1Z3-4S-67B9", "line": 6, "entity_type": "ssn_obfuscated", "is_pii": true, "note": "SSN with letter substitutions (Z=2, S=5, B=8)"},
+      {"text": "123-45-6789", "line": 7, "entity_type": "ssn", "is_pii": true, "note": "Decoded SSN"},
+      {"text": "l23-4S-67O9", "line": 10, "entity_type": "ssn_obfuscated", "is_pii": true, "note": "SSN with l=1, S=5, O=0 substitutions"},
+      {"text": "78О-12-З456", "line": 13, "entity_type": "ssn_obfuscated", "is_pii": true, "note": "SSN with Cyrillic character substitutions"},
+      {"text": "9 8 7 - 6 5 - 4 3 2 1", "line": 17, "entity_type": "ssn_obfuscated", "is_pii": true, "note": "SSN with inserted spaces"},
+      {"text": "1234-56-789", "line": 20, "entity_type": "ssn_obfuscated", "is_pii": true, "note": "SSN with reversed group sizes"},
+      {"text": "4532-8901-2345-3456", "line": 24, "entity_type": "credit_card", "is_pii": true, "note": "Recovered credit card number"},
+      {"text": "(555) 876-0123", "line": 26, "entity_type": "phone", "is_pii": true, "note": "Phone number from contacts"},
+      {"text": "jobs@globexcorp.com", "line": 27, "entity_type": "email", "is_pii": false, "note": "Corporate functional email"}
+    ]
+  },
+
+  "test_spelled_out.txt": {
+    "entities": [
+      {"text": "one two three, dash, four five, dash, six seven eight nine", "line": 8, "entity_type": "ssn_spelled", "is_pii": true, "note": "SSN spelled out as words (123-45-6789)"},
+      {"text": "Patricia Whelton", "line": 6, "entity_type": "person_name", "is_pii": true, "note": "Caller's full name"},
+      {"text": "march fifteenth, nineteen eighty-two", "line": 10, "entity_type": "dob_spelled", "is_pii": true, "note": "Date of birth spelled out"},
+      {"text": "five five five, eight six seven, five three zero nine", "line": 12, "entity_type": "phone_spelled", "is_pii": true, "note": "Phone number spelled out"},
+      {"text": "p dot whelton at gmail dot com", "line": 13, "entity_type": "email_spelled", "is_pii": true, "note": "Email spelled out"},
+      {"text": "zero two one zero zero zero zero eight nine", "line": 15, "entity_type": "routing_number_spelled", "is_pii": true, "note": "Bank routing number spelled out"},
+      {"text": "one two three four five six seven eight nine zero", "line": 16, "entity_type": "account_number_spelled", "is_pii": true, "note": "Bank account number spelled out"},
+      {"text": "nine seven two zero one", "line": 19, "entity_type": "zip_code_spelled", "is_pii": true, "note": "ZIP code as part of full address"}
+    ]
+  },
+
+  "test_part_numbers.csv": {
+    "entities": [
+      {"text": "483-29-1847", "line": 2, "entity_type": "part_number", "is_pii": false, "note": "Industrial part number matching SSN format"},
+      {"text": "271-03-8842", "line": 3, "entity_type": "part_number", "is_pii": false, "note": "Part number matching SSN format"},
+      {"text": "891-45-2301", "line": 4, "entity_type": "part_number", "is_pii": false, "note": "Part number matching SSN format"},
+      {"text": "4532-1234-5678-9018", "line": 5, "entity_type": "part_number", "is_pii": false, "note": "Part number matching credit card format"},
+      {"text": "6011-4422-3311-2200", "line": 6, "entity_type": "part_number", "is_pii": false, "note": "Part number matching credit card format (Discover prefix)"},
+      {"text": "127-88-4423", "line": 7, "entity_type": "part_number", "is_pii": false, "note": "Part number matching SSN format"},
+      {"text": "553-21-9908", "line": 8, "entity_type": "part_number", "is_pii": false, "note": "Part number matching SSN format"},
+      {"text": "1234567890123", "line": 9, "entity_type": "part_number", "is_pii": false, "note": "Barcode number, not credit card"},
+      {"text": "9876543210987", "line": 10, "entity_type": "part_number", "is_pii": false, "note": "Barcode number, not credit card"},
+      {"text": "305-77-1234", "line": 11, "entity_type": "part_number", "is_pii": false, "note": "Part number matching SSN format"}
+    ]
+  },
+
+  "test_medical_notes.txt": {
+    "entities": [
+      {"text": "Angela Martinez", "line": 5, "entity_type": "person_name", "is_pii": true, "note": "Patient name"},
+      {"text": "07/22/1988", "line": 6, "entity_type": "dob", "is_pii": true, "note": "Date of birth"},
+      {"text": "4829317", "line": 7, "entity_type": "medical_record_number", "is_pii": true, "note": "MRN is PHI under HIPAA"},
+      {"text": "BCBS-483291847", "line": 8, "entity_type": "insurance_id", "is_pii": true, "note": "Insurance member ID"},
+      {"text": "329-18-4756", "line": 9, "entity_type": "ssn", "is_pii": true, "note": "Patient SSN"},
+      {"text": "142/88", "line": 12, "entity_type": "vital_sign", "is_pii": false, "note": "Blood pressure reading, not PII"},
+      {"text": "RX-7834291", "line": 26, "entity_type": "prescription_id", "is_pii": true, "note": "Links to patient identity"},
+      {"text": "Miguel Martinez", "line": 29, "entity_type": "person_name", "is_pii": true, "note": "Emergency contact name"},
+      {"text": "(555) 284-9031", "line": 30, "entity_type": "phone", "is_pii": true, "note": "Personal phone"},
+      {"text": "m.martinez.home@yahoo.com", "line": 31, "entity_type": "email", "is_pii": true, "note": "Personal email"},
+      {"text": "James Liu", "line": 33, "entity_type": "person_name", "is_pii": true, "note": "Doctor name (PHI in context)"},
+      {"text": "1234567890", "line": 34, "entity_type": "npi", "is_pii": true, "note": "National Provider Identifier"}
+    ]
+  },
+
+  "test_password_dump.txt": {
+    "entities": [
+      {"text": "Kj8#mNp2$vX9", "line": 8, "entity_type": "password", "is_pii": true, "note": "Database password"},
+      {"text": "ghp_a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8", "line": 13, "entity_type": "api_key", "is_pii": true, "note": "GitHub PAT"},
+      {"text": "sk_live_51Hb8kGJ2eZvKYlo2C0GFHQZ8k", "line": 18, "entity_type": "api_key", "is_pii": true, "note": "Stripe live key"},
+      {"text": "r00tP@ss!2024", "line": 23, "entity_type": "password", "is_pii": true, "note": "MySQL root password"},
+      {"text": "AKIAI44QH8DHBEXAMPLE", "line": 33, "entity_type": "api_key", "is_pii": true, "note": "AWS access key"},
+      {"text": "je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY", "line": 34, "entity_type": "api_key", "is_pii": true, "note": "AWS secret key"},
+      {"text": "my-super-secret-jwt-key-do-not-share-2024", "line": 39, "entity_type": "secret", "is_pii": true, "note": "JWT signing secret"},
+      {"text": "GOCSPX-abc123def456ghi789", "line": 44, "entity_type": "api_key", "is_pii": true, "note": "Google OAuth client secret"},
+      {"text": "security-team@acmecorp.com", "line": 47, "entity_type": "email", "is_pii": false, "note": "Functional team email"},
+      {"text": "(555) 911-0042", "line": 47, "entity_type": "phone", "is_pii": true, "note": "Security team direct line"}
+    ]
+  },
+
+  "test_multilingual.txt": {
+    "entities": [
+      {"text": "田中太郎", "line": 4, "entity_type": "person_name", "is_pii": true, "note": "Japanese name"},
+      {"text": "Tanaka Taro", "line": 4, "entity_type": "person_name", "is_pii": true, "note": "Romanized Japanese name"},
+      {"text": "t.tanaka@acmecorp.co.jp", "line": 5, "entity_type": "email", "is_pii": true, "note": "Personal work email"},
+      {"text": "+81-3-1234-5678", "line": 6, "entity_type": "phone", "is_pii": true, "note": "Japanese phone number"},
+      {"text": "1234-5678-9012", "line": 7, "entity_type": "national_id", "is_pii": true, "note": "Japanese My Number"},
+      {"text": "James Whitfield", "line": 10, "entity_type": "person_name", "is_pii": true, "note": "UK employee name"},
+      {"text": "j.whitfield@acmecorp.co.uk", "line": 11, "entity_type": "email", "is_pii": true, "note": "Personal work email"},
+      {"text": "+44 20 7946 0958", "line": 12, "entity_type": "phone", "is_pii": true, "note": "UK phone number"},
+      {"text": "AB 12 34 56 C", "line": 13, "entity_type": "national_id", "is_pii": true, "note": "UK National Insurance Number"},
+      {"text": "12345678", "line": 15, "entity_type": "account_number", "is_pii": true, "note": "UK bank account number"},
+      {"text": "Katharina Müller", "line": 18, "entity_type": "person_name", "is_pii": true, "note": "German employee name"},
+      {"text": "k.mueller@acmecorp.de", "line": 19, "entity_type": "email", "is_pii": true, "note": "Personal work email"},
+      {"text": "12 345 678 901", "line": 21, "entity_type": "national_id", "is_pii": true, "note": "German tax ID (Steuer-ID)"},
+      {"text": "Carlos Eduardo da Silva", "line": 24, "entity_type": "person_name", "is_pii": true, "note": "Brazilian employee name"},
+      {"text": "ce.silva@acmecorp.com.br", "line": 25, "entity_type": "email", "is_pii": true, "note": "Personal work email"},
+      {"text": "123.456.789-09", "line": 27, "entity_type": "national_id", "is_pii": true, "note": "Brazilian CPF"},
+      {"text": "Marie-Claire Tremblay", "line": 30, "entity_type": "person_name", "is_pii": true, "note": "Canadian employee name"},
+      {"text": "mc.tremblay@acmecorp.ca", "line": 31, "entity_type": "email", "is_pii": true, "note": "Personal work email"},
+      {"text": "(514) 555-0189", "line": 32, "entity_type": "phone", "is_pii": true, "note": "Canadian phone number"},
+      {"text": "046-454-286", "line": 33, "entity_type": "national_id", "is_pii": true, "note": "Canadian SIN"},
+      {"text": "Patricia Whelton", "line": 36, "entity_type": "person_name", "is_pii": true, "note": "US employee name"},
+      {"text": "p.whelton@acmecorp.com", "line": 37, "entity_type": "email", "is_pii": true, "note": "Personal work email"},
+      {"text": "(555) 867-5309", "line": 38, "entity_type": "phone", "is_pii": true, "note": "US phone number"},
+      {"text": "987-65-4321", "line": 39, "entity_type": "ssn", "is_pii": true, "note": "US SSN"}
+    ]
+  },
+
+  "test_misspelled.txt": {
+    "entities": [
+      {"text": "Rberto Gonzalez", "line": 3, "entity_type": "person_name", "is_pii": true, "note": "Misspelled patient name (Roberto)"},
+      {"text": "445-29-8831", "line": 4, "entity_type": "ssn", "is_pii": true, "note": "SSN despite misspelled label"},
+      {"text": "03/15/1975", "line": 5, "entity_type": "dob", "is_pii": true, "note": "Date of birth"},
+      {"text": "1847 Elm St, Apt 3B, Austin TX 78701", "line": 6, "entity_type": "address", "is_pii": true, "note": "Full home address"},
+      {"text": "Maria Gonzalez", "line": 9, "entity_type": "person_name", "is_pii": true, "note": "Emergency contact name"},
+      {"text": "(555) 234-8876", "line": 10, "entity_type": "phone", "is_pii": true, "note": "Personal phone"},
+      {"text": "m.gonzalez82@gmial.com", "line": 11, "entity_type": "email", "is_pii": true, "note": "Personal email (gmail misspelled as gmial)"},
+      {"text": "BCBS-9928174", "line": 14, "entity_type": "insurance_id", "is_pii": true, "note": "Insurance policy number"},
+      {"text": "5425-9876-5432-1098", "line": 18, "entity_type": "credit_card", "is_pii": true, "note": "Credit card number"},
+      {"text": "Roberto Gonzalez", "line": 20, "entity_type": "person_name", "is_pii": true, "note": "Name on card (correctly spelled)"},
+      {"text": "four four five dash two nine dash eight eight three one", "line": 29, "entity_type": "ssn_spelled", "is_pii": true, "note": "SSN verified verbally, spelled out"},
+      {"text": "March fifteenth, nineteen seventy-five", "line": 30, "entity_type": "dob_spelled", "is_pii": true, "note": "DOB verified verbally, spelled out"}
+    ]
+  }
+}

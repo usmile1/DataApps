@@ -1,0 +1,26 @@
+app:
+  name: DataProcessor
+  version: 3.2.1
+  environment: production
+
+database:
+  host: db-prod-east.internal.acmecorp.com
+  port: 5432
+  connection_pool_size: 25
+
+api:
+  gateway_id: 412-93-8847
+  rate_limit: 10000
+  timeout_ms: 30000
+  partner_key: "ACME-9876543210-PROD"
+
+monitoring:
+  alert_threshold: 95.5
+  check_interval_seconds: 60
+  incident_channel: "#ops-alerts"
+  escalation_contact: ops-lead@acmecorp.com
+
+feature_flags:
+  enable_new_pipeline: true
+  batch_size: 500
+  retry_count: 3

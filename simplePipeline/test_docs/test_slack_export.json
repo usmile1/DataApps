@@ -1,0 +1,40 @@
+{
+  "channel": "#it-support",
+  "messages": [
+    {
+      "user": "mike.torres",
+      "timestamp": "2024-09-10T09:14:00Z",
+      "text": "Hey can someone reset my VPN? username is mtorres, password was Monkey123!"
+    },
+    {
+      "user": "lisa.patel",
+      "timestamp": "2024-09-10T09:16:00Z",
+      "text": "Mike you really shouldn't post passwords in slack. I'll DM you a temp one."
+    },
+    {
+      "user": "mike.torres",
+      "timestamp": "2024-09-10T09:18:00Z",
+      "text": "oh right sorry. Also my corporate card got declined, number is 4111 1111 1111 1111 exp 12/25, can someone check?"
+    },
+    {
+      "user": "lisa.patel",
+      "timestamp": "2024-09-10T09:20:00Z",
+      "text": "MIKE. Please delete that message. I'll call you at 555-321-0099."
+    },
+    {
+      "user": "james.wright",
+      "timestamp": "2024-09-10T10:05:00Z",
+      "text": "Unrelated but I need the vendor account number for Globex — it's 7834-2291-0045. Wire transfer ref is WT-2024-09187."
+    },
+    {
+      "user": "sarah.kim",
+      "timestamp": "2024-09-10T10:30:00Z",
+      "text": "For the new hire paperwork, my SSN is 456-78-9012. Is this the right channel? I thought HR said to send it here."
+    },
+    {
+      "user": "lisa.patel",
+      "timestamp": "2024-09-10T10:32:00Z",
+      "text": "SARAH NO. Wrong channel. This is public. Please delete immediately and contact HR directly at hr@acmecorp.com"
+    }
+  ]
+}

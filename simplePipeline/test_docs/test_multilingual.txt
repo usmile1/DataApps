@@ -1,0 +1,39 @@
+International Employee Directory — Regional Offices
+
+JAPAN OFFICE:
+  Name: 田中太郎 (Tanaka Taro)
+  Email: t.tanaka@acmecorp.co.jp
+  Phone: +81-3-1234-5678
+  My Number (マイナンバー): 1234-5678-9012
+
+UK OFFICE:
+  Name: James Whitfield
+  Email: j.whitfield@acmecorp.co.uk
+  Phone: +44 20 7946 0958
+  National Insurance Number (NINO): AB 12 34 56 C
+  Sort Code: 20-45-67
+  Account: 12345678
+
+GERMANY OFFICE:
+  Name: Katharina Müller
+  Email: k.mueller@acmecorp.de
+  Phone: +49 30 901820
+  Steuer-ID: 12 345 678 901
+
+BRAZIL OFFICE:
+  Name: Carlos Eduardo da Silva
+  Email: ce.silva@acmecorp.com.br
+  Phone: +55 11 91234-5678
+  CPF: 123.456.789-09
+
+CANADA OFFICE:
+  Name: Marie-Claire Tremblay
+  Email: mc.tremblay@acmecorp.ca
+  Phone: +1 (514) 555-0189
+  SIN: 046-454-286
+
+US HEADQUARTERS:
+  Name: Patricia Whelton
+  Email: p.whelton@acmecorp.com
+  Phone: (555) 867-5309
+  SSN: 987-65-4321

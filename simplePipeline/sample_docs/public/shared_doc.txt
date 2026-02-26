@@ -1,0 +1,23 @@
+Team Onboarding Checklist — New Hire Packet
+
+Welcome to AcmeCorp! Please have the following ready for your first day:
+
+For benefits enrollment, we'll need:
+- Full legal name: ___________________
+- Social Security Number: ___________________
+- Date of birth: ___________________
+
+Example completed form (DO NOT share externally):
+  Name: Jane Doe
+  SSN: 111-22-3333
+  DOB: 1990-05-15
+  Email: jane.doe@acmecorp.com
+  Phone: (555) 901-2345
+
+Emergency contact:
+  Name: John Doe
+  Phone: (555) 109-8765
+  Relationship: Spouse
+
+Please return this form to HR (building 3, room 201) — do NOT email it.
+Note: This document contains sensitive PII and should not be stored in shared drives.

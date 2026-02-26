@@ -1,0 +1,6 @@
+employee_id,full_name,social_security_number,wages,federal_tax_withheld,state,filing_year
+E001,Alice Johnson,123-45-6789,95000.00,19000.00,CA,2023
+E002,Bob Martinez,987-65-4321,78000.00,15600.00,TX,2023
+E003,Carol Chen,456-78-9012,112000.00,24640.00,NY,2023
+E004,David Okafor,321-54-9876,88000.00,17600.00,WA,2023
+E005,Emily Park,654-32-1098,105000.00,23100.00,CA,2023

@@ -1,0 +1,26 @@
+TERMS OF SERVICE — AcmeCorp Data Processing Agreement
+Effective Date: January 1, 2024
+Document Reference: 483-29-1847
+
+This agreement ("Agreement") is entered into pursuant to IRS Form 941-SS
+and governed by regulation 26 CFR 301.7701-1 through 301.7701-4.
+
+Section 4.2 — Data Protection
+All personally identifiable information, including but not limited to
+Social Security Numbers, shall be encrypted at rest using AES-256
+encryption as specified in NIST publication 800-171.
+
+Section 7.1 — Liability
+The total aggregate liability under this agreement shall not exceed
+$500,000 (five hundred thousand dollars). Claims must be filed within
+180 days of the incident per statute 284-03-9182.
+
+Section 9.3 — Contact Information
+For questions regarding this agreement, contact:
+  Legal Department
+  compliance@acmecorp.com
+  Phone: (800) 555-0142
+
+Authorized Signatory: Robert Chen, VP Legal
+Employee ID: E-48293
+Date: 2024-01-15

@@ -1,0 +1,19 @@
+Q3 Product Planning Meeting — 2024-09-10
+Attendees: Sarah Kim, Mark Thompson, Lisa Patel, Dev Team
+
+Action items from last week:
+- Mark to finalize the API spec by Friday. Call him at 555-867-5309 if any questions.
+- Lisa will coordinate with the vendor. Her cell is (555) 234-0987.
+
+Discussion notes:
+Sarah mentioned that 478 customers have migrated to the new tier since July.
+We need to address the 12345 ticket backlog before Q4 planning begins.
+
+Mark brought up that we processed 340981267 events last quarter — a 23% increase.
+The system uptime was 99.97% which translates to roughly 13 minutes of downtime.
+
+Budget discussion: The project code is 291-04-8832 and needs to be referenced
+on all purchase orders going forward. Total budget remaining: $425,000.
+
+Next meeting: October 8th. Sarah will send a calendar invite to everyone.
+Dial-in number: 1-800-555-0199, access code 7734921.

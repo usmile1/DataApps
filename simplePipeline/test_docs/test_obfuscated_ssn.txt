@@ -1,0 +1,33 @@
+Internal Investigation Notes — Case #2024-0891
+Analyst: Det. Maria Gonzalez
+
+Subject attempted to obscure identity documents using the following methods:
+
+Document 1 (photocopy):
+  SSN appears altered: 1Z3-4S-67B9
+  Original likely: 123-45-6789 (Z→2, S→5, B→8 substitutions)
+
+Document 2 (handwritten):
+  SSN written as: l23-4S-67O9
+  Note: lowercase L used for 1, capital S for 5, capital O for 0
+
+Document 3 (typed, font manipulation):
+  SSN: 78О-12-З456
+  Note: Cyrillic О (U+041E) used instead of zero,
+        Cyrillic З (U+0417) used instead of digit 3
+
+Document 4 (spaced out):
+  Subject provided SSN as: 9 8 7 - 6 5 - 4 3 2 1
+  Likely attempt to defeat pattern matching
+
+Document 5 (reversed):
+  Found notation: 1234-56-789 (reversed group sizes)
+  Actual SSN likely: 789-56-1234
+
+Also recovered:
+  Credit card with tape over digits: 4XXX-XXXX-XXXX-3456
+  Partial visible: first digit 4 (Visa), last four 3456
+  Full number recovered from receipt: 4532-8901-2345-3456
+
+Subject's phone found in contacts as "Mom": (555) 876-0123
+Employer listed as Globex Corp, contact: jobs@globexcorp.com

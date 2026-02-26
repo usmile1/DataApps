@@ -1,0 +1,11 @@
+metric,q1_2024,q2_2024,q3_2024,change_pct
+total_revenue,1250000,1387500,1498750,8.02
+active_users,34521,36109,38442,6.46
+churn_rate,4.2,3.8,3.5,-7.89
+avg_order_value,127.50,131.25,134.88,2.77
+support_tickets,8923,9105,8744,-3.97
+uptime_pct,99.95,99.97,99.99,0.02
+api_calls_millions,412.7,438.9,467.2,6.44
+nps_score,72,74,78,5.41
+cost_per_acquisition,43.21,41.87,39.95,-4.58
+ltv_ratio,3.2,3.4,3.6,5.88

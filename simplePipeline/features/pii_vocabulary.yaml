@@ -1,0 +1,58 @@
+# PII-related header/field name vocabulary.
+# Used to score how likely a column or key name refers to sensitive data.
+#
+# In production this would be replaced by a learned similarity model.
+# This curated list serves as bootstrap / training signal.
+
+# Direct PII identifiers
+- ssn
+- social_security
+- social_security_number
+- tax_id
+- taxpayer_id
+- national_id
+
+# Names
+- full_name
+- first_name
+- last_name
+- name
+- surname
+
+# Contact info
+- email
+- email_address
+- phone
+- phone_number
+- mobile
+- cell
+- telephone
+
+# Financial
+- credit_card
+- card_number
+- cc_number
+- account_number
+- routing_number
+- bank_account
+
+# Dates that can be identifying
+- date_of_birth
+- dob
+- birth_date
+- birthday
+
+# Addresses
+- address
+- street_address
+- home_address
+- zip_code
+- postal_code
+
+# Other identifiers
+- driver_license
+- drivers_license
+- passport
+- passport_number
+- patient_id
+- member_id

@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+
+# Generated artifacts
+*.db
+*.db-shm
+*.db-wal
+report.html
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML artifacts (model weights, checkpoints)
+*.safetensors
+*.gguf
+simplePipeline/slm/fused_model/
+simplePipeline/slm/adapters/
+
+# Claude Code
+.claude/

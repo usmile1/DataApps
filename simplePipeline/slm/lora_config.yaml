@@ -1,0 +1,30 @@
+# LoRA fine-tuning config for secret detection SLM
+# Target: llama3.2 3B (4-bit quantized) via QLoRA on Apple Silicon
+# Dataset: 153 train / 27 val chat-format examples
+
+model: mlx-community/Llama-3.2-3B-Instruct-4bit
+
+fine_tune_type: lora
+
+lora_parameters:
+  keys: ["self_attn.q_proj", "self_attn.v_proj"]
+  rank: 8
+  scale: 2.0            # alpha/rank = 16/8
+  dropout: 0.05          # light regularization for small dataset
+
+num_layers: 16
+
+iters: 400               # ~2.6 epochs over 153 train examples
+batch_size: 1            # small dataset, no batching needed
+learning_rate: 2.0e-5
+adapter_path: adapters
+
+steps_per_report: 10
+steps_per_eval: 50       # validate every 50 steps to catch overfitting early
+save_every: 100
+val_batches: -1          # use entire validation set
+max_seq_length: 2048
+
+grad_checkpoint: true
+mask_prompt: true        # only compute loss on assistant JSON responses
+seed: 42

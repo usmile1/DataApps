@@ -1,0 +1,40 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "TXN-20240901-001",
+      "customer_name": "Alice Johnson",
+      "card_number": "4532-1234-5678-9012",
+      "amount": 249.99,
+      "currency": "USD",
+      "timestamp": "2024-09-01T14:32:00Z",
+      "status": "completed"
+    },
+    {
+      "transaction_id": "TXN-20240901-002",
+      "customer_name": "Bob Martinez",
+      "card_number": "5425 9876 5432 1098",
+      "amount": 89.50,
+      "currency": "USD",
+      "timestamp": "2024-09-01T15:10:00Z",
+      "status": "completed"
+    },
+    {
+      "transaction_id": "TXN-20240902-003",
+      "customer_name": "Carol Chen",
+      "card_number": "371234567890123",
+      "amount": 1250.00,
+      "currency": "USD",
+      "timestamp": "2024-09-02T09:45:00Z",
+      "status": "pending"
+    },
+    {
+      "transaction_id": "TXN-20240902-004",
+      "customer_name": "David Okafor",
+      "card_number": "6011-5678-9012-3456",
+      "amount": 34.99,
+      "currency": "USD",
+      "timestamp": "2024-09-02T11:20:00Z",
+      "status": "completed"
+    }
+  ]
+}

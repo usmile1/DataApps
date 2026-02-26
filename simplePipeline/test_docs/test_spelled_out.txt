@@ -1,0 +1,28 @@
+Voicemail Transcript — 2024-09-12, 3:47 PM
+Caller: Unknown
+Recipient: Claims Department
+
+"Hi, I'm calling about my insurance claim, number eight four seven
+three two one. My name is Patricia Whelton.
+
+I need to verify my identity. My social security number is
+one two three, dash, four five, dash, six seven eight nine.
+
+Also my date of birth is march fifteenth, nineteen eighty-two.
+
+You can reach me at area code five five five, eight six seven,
+five three zero nine. Or email me at p dot whelton at gmail dot com.
+
+My bank routing number is zero two one zero zero zero zero eight nine
+and account number is one two three four five six seven eight nine zero.
+
+Oh and my new address is forty-two fifteen Oak Street, apartment B,
+Portland, Oregon, nine seven two zero one.
+
+Thank you, bye."
+
+--- End Transcript ---
+
+Transcribed by: Auto-transcription service v2.4
+Confidence: 94%
+Flagged for review: YES — potential PII in voicemail

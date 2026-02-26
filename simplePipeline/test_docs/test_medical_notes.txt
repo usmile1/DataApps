@@ -1,0 +1,43 @@
+PATIENT ENCOUNTER NOTE
+Facility: Riverside Medical Center
+Date: 2024-09-14
+
+Patient: Angela Martinez
+DOB: 07/22/1988
+MRN: 4829317
+Insurance ID: BCBS-483291847
+SSN (for billing): 329-18-4756
+
+Chief Complaint: Chest pain, shortness of breath
+
+Vitals:
+  BP: 142/88
+  HR: 98
+  Temp: 98.6 F
+  O2 Sat: 96%
+  Weight: 165 lbs
+  Height: 5'4"
+  BMI: 28.3
+  Pain Scale: 7/10
+
+Assessment:
+  ICD-10: R07.9 (chest pain, unspecified)
+  ICD-10: R06.00 (dyspnea, unspecified)
+
+Plan:
+  - EKG completed, normal sinus rhythm
+  - Troponin level: 0.02 ng/mL (normal)
+  - Prescribed: Metoprolol 25mg BID
+  - Prescription ID: RX-7834291
+  - Follow up in 2 weeks
+
+Emergency Contact: Miguel Martinez (husband)
+  Phone: (555) 284-9031
+  Email: m.martinez.home@yahoo.com
+
+Attending: Dr. James Liu, MD
+NPI: 1234567890
+DEA: FL1234567
+
+Dictated: 2024-09-14 16:45
+Transcribed: 2024-09-14 17:02

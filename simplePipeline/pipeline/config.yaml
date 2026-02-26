@@ -1,0 +1,19 @@
+pipeline:
+  connector:
+    class: connector.filesystem.FilesystemConnector
+    root_dir: sample_docs
+
+  steps:
+    - name: features
+      class: features.step.FeatureComputationStep
+    - name: regex
+      class: pipeline.layer1_step.RegexClassificationStep
+    - name: ner
+      class: pipeline.layer2_step.NERClassificationStep
+    - name: slm
+      class: pipeline.layer_slm_step.SLMClassificationStep
+      model: secret-scanner
+    - name: llm
+      class: pipeline.layer3_step.LLMClassificationStep
+      model: gpt-oss:20b
+      # Alternative: model: llama3.2:latest
